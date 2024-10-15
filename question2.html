@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const products = [
+        { name: "Product 1", price: 10, quantity: 5 },
+        { name: "Product 2", price: 20, quantity: 3 },
+        { name: "Product 3", price: 30, quantity: 7 },
+        { name: "Product 4", price: 40, quantity: 2 },
+        { name: "Product 5", price: 50, quantity: 1 },
+      ];
+
+      let newarray = products.filter(function (products) {
+        return products.price === 10;
+      });
+      console.log(newarray);
+    </script>
+  </body>
+</html>

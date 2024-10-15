@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const user = {
+        // Basic Information
+        id: "abc123", // Unique user identifier
+        username: "john_doe",
+        passwordHash: "hashed_password_string", // Secure hashed password
+        fullName: {
+          firstName: "John",
+          middleName: "A.",
+          lastName: "Doe",
+        },
+        gender: "male", // "male", "female", "non-binary", etc.
+        dateOfBirth: "1990-05-14T00:00:00.000Z", // ISO 8601 format
+
+        // Contact Information
+        email: "john.doe@example.com",
+        phoneNumbers: [
+          { type: "home", number: "+1-123-456-7890" },
+          { type: "work", number: "+1-987-654-3210" },
+        ],
+        address: {
+          street: "123 Elm St.",
+          city: "Springfield",
+          state: "IL",
+          postalCode: "62704",
+          country: "USA",
+        },
+      };
+
+      const { country } = user.address;
+      alert(country);
+
+    </script>
+  </body>
+</html>
